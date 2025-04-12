@@ -1,3 +1,4 @@
+Fixture
 a fixture is something u can have run before every single test(not yet sure if it provides a global instance common to all the tests in the test_file)
     @pytest.fixture
 
@@ -9,3 +10,7 @@ for data structures that are not in-memory like a real database
 
     -- anything before the yield statement will run before the test runs
     -- anything after the yield will run after the test runs
+
+
+Skip a test
+    use the pytest.mark.skip decorator
