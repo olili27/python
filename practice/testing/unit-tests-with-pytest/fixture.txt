@@ -2,3 +2,10 @@ a fixture is something u can have run before every single test
     @pytest.fixture
 
 its like a setup that gives you a fresh instance or data before every test runs
+
+for data structures that are not in-memory like a real database
+    use keyword `yield` before the instance to provide a fixture instance
+    then u can later perform a clean up
+
+    -- anything before the yield statement will run before the test runs
+    -- anything after the yield will run after the test runs
