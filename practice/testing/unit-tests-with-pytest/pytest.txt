@@ -2,6 +2,8 @@ Fixture
 a fixture is something u can have run before every single test(not yet sure if it provides a global instance common to all the tests in the test_file)
     @pytest.fixture
 
+    ** i realised the mistake i had done. the storage unit for the class i was testing was a class variable/attribute so it was common to all instances being created
+
 its like a setup that gives you a fresh instance or data before every test runs
 
 for data structures that are not in-memory like a real database
