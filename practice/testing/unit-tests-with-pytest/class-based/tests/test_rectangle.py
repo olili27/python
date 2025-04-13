@@ -50,7 +50,7 @@ class TestRectangle2:
 class TestRectangle22:
 
     # such that i dont pass the fixture to every test function
-    # the fixture can be accessed via self as an instance attribute
+    # the fixture can be accessed via self as an class attribute
     @pytest.fixture(scope="class", autouse=True)
     def set_up_rect(self, request):
         request.cls.rect = Rectangle(8, 2)
