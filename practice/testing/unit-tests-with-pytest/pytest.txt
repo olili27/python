@@ -14,3 +14,14 @@ for data structures that are not in-memory like a real database
 
 Skip a test
     use the pytest.mark.skip decorator
+
+    skip with a condition
+    pytest.mark.skipif(condition, reason="")
+
+
+Mark a test that its going to fail
+    use pytest.mark.xfail decorator
+
+
+values are almost equal: especially when dealing with floats
+    assert a == pytest.approx(y, 0.02)
